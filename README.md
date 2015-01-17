@@ -21,7 +21,7 @@ Developed in PHP scripting language.
 
 # How to use
 
-Configure the defaults settings for FTP and cPanel accounts. Editing index.php file:
+1. Configure the defaults settings for FTP and cPanel accounts. Editing index.php file:
 
 - ```$emailNotify = '';```   Notification email for finish backup
 - ```$backupDailyLimit = 5;``` Number of store backups in daily directory
@@ -36,12 +36,13 @@ Configure the defaults settings for FTP and cPanel accounts. Editing index.php f
 - ```$cpanelUsername = "";``` cPanel User Account
 - ```$cpanelPassword = "";``` cPanel Password Account
 
-Configure a cron task in your web hosting to run CP-ASB script every day.
-
-When it finish, cPanel will send a email notification with the log of backup and upload FTP. Then you could find the backup in the directories structure.
+2. Upload index.php and lib folder to your web hosting.
+3. Configure a cron task in your web hosting to run CP-ASB script every day.
 
 # Tips
 
 - There is new cPanel API 2 but it hasn't got backup Feature, so I use API 1 to do it.
 - The day 1 of each month, last done backup will move to Monthly Directory. I do that because FTP protocol don't allow ```copy``` commands from FTP server to same FTP server, I would use local server to ```get``` and ```put``` the file but this would waste too much time transfering a FullBackup. It mean last backup daily file for each month will move to Monthly directory.
 - The day 1 of January of each year, last done backup will move to Yearly Directory. The reason is the same of the monthly backup. it mean last backup monthly file for each year will move to Year directory.
+- When Backup finish, cPanel will send a email notification with the log of backup and upload FTP. Then you could find the backup in the directories structure.
+
