@@ -1,8 +1,8 @@
-# cPanel Automated Backup System
+# cPanel Automated System Backup
 
-Automated full Backups dialy with a Cron task and upload it to a remote FTP using orginize folder structure by days,months and years. 
+CP-ASB (cPanel Automated System Backup) automated full Backups daily with a Cron task and upload it to a remote FTP using orginize folder structure by days,months and years. 
 
-cPanel is a control panel base on Linux designed to simplify the process of hosting a web site. Most of professional web hosting provide cPanel. CP-ABS can be used with all of then that use cPanel API 1. Some of [providers](http://cpanel.net/hosting-providers/hosting-provider-showcase/) are GoDaddy, blueHost, unitedHosting, HostGator, resellerclub, etc. 
+cPanel is a control panel base on Linux designed to simplify the process of hosting a web site. Most of professional web hosting provide cPanel. CP-ASB can be used with all of then that use cPanel API 1. Some of [providers](http://cpanel.net/hosting-providers/hosting-provider-showcase/) are GoDaddy, blueHost, unitedHosting, HostGator, resellerclub, etc. 
 
 Developed in PHP scripting language.
 
@@ -14,10 +14,10 @@ Developed in PHP scripting language.
 
 - FullBackup from cPanel (mySQL, data, emails, configuration...)
 - Remote FTP upload to a server when cPanel backup finish
-- Automated directory structure for Dialy backup 
+- Automated directory structure for Daily backup 
 - Automated directory structure for Monthly backup
 - Automated directory structure for Yearly backup
-- Automated backup delete when reach file limit for Dialy Directory
+- Automated backup delete when reach file limit for Daily Directory
 
 # How to use
 
@@ -25,7 +25,6 @@ Configure the defaults settings for FTP and cPanel accounts. Editing index.php f
 
 - ```$emailNotify = '';```   Notification email for finish backup
 - ```$backupDailyLimit = 5;``` Number of store backups in daily directory
-
 - ```$ftpHost = "";``` FTP remote IP or domain
 - ```$ftpUser = "";``` FTP user account
 - ```$ftpPass = "";``` FTP password account
@@ -33,12 +32,11 @@ Configure the defaults settings for FTP and cPanel accounts. Editing index.php f
 - ```$ftpDailyDir = "daily";``` Store daily Backups
 - ```$ftpMonthlyDir = "monthly";``` Store Monthly backups
 - ```$ftpYearlyDir = "yearly";``` Store Yearly backups
-
 - ```$cpanelServer = "";``` cPanel Server IP or domain name (cpanel.domain.com)
 - ```$cpanelUsername = "";``` cPanel User Account
 - ```$cpanelPassword = "";``` cPanel Password Account
 
-Configure a cron task in your web hosting to run CP-ABS script every day.
+Configure a cron task in your web hosting to run CP-ASB script every day.
 
 When it finish, cPanel will send a email notification with the log of backup and upload FTP. Then you could find the backup in the directories structure.
 
