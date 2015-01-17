@@ -21,7 +21,7 @@ Developed in PHP scripting language.
 
 # How to use
 
-1. Configure the defaults settings for FTP and cPanel accounts. Editing index.php file:
+1 Configure the defaults settings for FTP and cPanel accounts. Editing index.php file:
 
 - ```$emailNotify = '';```   Notification email for finish backup
 - ```$backupDailyLimit = 5;``` Number of store backups in daily directory
@@ -36,8 +36,8 @@ Developed in PHP scripting language.
 - ```$cpanelUsername = "";``` cPanel User Account
 - ```$cpanelPassword = "";``` cPanel Password Account
 
-2. Upload index.php and lib folder to your web hosting.
-3. Configure a cron task in your web hosting to run CP-ASB script every day.
+2 Upload index.php and lib folder to your web hosting.
+3 Configure a cron task in your web hosting to run index.php script every day.
 
 # Tips
 
