@@ -43,5 +43,5 @@ When it finish, cPanel will send a email notification with the log of backup and
 # Tips
 
 - There is new cPanel API 2 but it hasn't got backup Feature, so I use API 1 to do it.
-- The day 1 of each month, last done backup will move to Monthly Directory. I do that because FTP protocol don't allow ```copy``` commands from FTP server to same FTP server, I would use local server to ```get``` and ```put``` the file but this would waste too much time transfering a FullBackup.
-- The day 1 of January of each year, last done backup will move to Yearly Directory. The reason is the same of the monthly backup.
+- The day 1 of each month, last done backup will move to Monthly Directory. I do that because FTP protocol don't allow ```copy``` commands from FTP server to same FTP server, I would use local server to ```get``` and ```put``` the file but this would waste too much time transfering a FullBackup. It mean last backup daily file for each month will move to Monthly directory.
+- The day 1 of January of each year, last done backup will move to Yearly Directory. The reason is the same of the monthly backup. it mean last backup monthly file for each year will move to Year directory.

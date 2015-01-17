@@ -32,7 +32,7 @@ $ftpYearlyDir = "yearly";
 // ----------------------------------------------------------
 // cPanel
 
-$cpanelServer = ""; // Server IP or domain name(cpanel.domain.com)
+$cpanelServer = ""; 
 $cpanelUsername = ""; 
 $cpanelPassword = "";
 
@@ -92,10 +92,12 @@ if (count($dailyBackup) >0 ){
 
 	// Move newer Backup done to Monthly or Yearly Folder
 	if(!empty($newerFile)){
-		if (date("d") == 1 && date("m") == 1){		
-			ftp_rename($ftpConnection, $newerFile, "../". $ftpYearlyDir ."/". $newerFile);
-		}else if (date("d") == 1){		
-			ftp_rename($ftpConnection, $newerFile, "../". $ftpMonthlyDir ."/". $newerFile);
+		if (date("j") == 1 && date("n") == 1){		
+			$newFileName =  date("Y", strtotime("-1 year"));
+			ftp_rename($ftpConnection, $newerFile, "../". $ftpYearlyDir ."/". $newFileName . "_backup.tar.gz");
+		}else if (date("j") == 1){	
+			$newFileName =  date("Y_m", strtotime("-1 months"));
+			ftp_rename($ftpConnection, $newerFile, "../". $ftpMonthlyDir ."/". $newFileName . "_backup.tar.gz");
 		}
 	}
 }
