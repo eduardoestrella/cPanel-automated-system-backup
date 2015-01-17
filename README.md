@@ -1,14 +1,14 @@
-# cPanel Automated Backup System CP-ABS
+# cPanel Automated Backup System
 
 Automated full Backups dialy with a Cron task and upload it to a remote FTP using orginize folder structure by days,months and years. 
 
-cPanel is a control panel base on Linux designed to simplify the process of hosting a web site. Most of professional web hosting provide cPanel. CP-ABS can be used with all of then that use cPanel API 1. Some of providers are GoDaddy, blueHost, unitedHosting, HostGator, resellerclub, etc. (http://cpanel.net/hosting-providers/hosting-provider-showcase/)
+cPanel is a control panel base on Linux designed to simplify the process of hosting a web site. Most of professional web hosting provide cPanel. CP-ABS can be used with all of then that use cPanel API 1. Some of [providers](http://cpanel.net/hosting-providers/hosting-provider-showcase/) are GoDaddy, blueHost, unitedHosting, HostGator, resellerclub, etc. 
 
 Developed in PHP scripting language.
 
 # Dependencies
 
-We need a xmlapi (https://github.com/CpanelInc/xmlapi-php) to connect with cPanel's XML-API.
+- [xmlapi](https://github.com/CpanelInc/xmlapi-php) to connect with cPanel's XML-API.
 
 # Features
 
@@ -23,20 +23,20 @@ We need a xmlapi (https://github.com/CpanelInc/xmlapi-php) to connect with cPane
 
 Configure the defaults settings for FTP and cPanel accounts. Editing index.php file:
 
-```$emailNotify = '';```   Notification email for finish backup
-```$backupDailyLimit = 5;``` Number of store backups in daily directory
+- ```$emailNotify = '';```   Notification email for finish backup
+- ```$backupDailyLimit = 5;``` Number of store backups in daily directory
 
-```$ftpHost = "";``` FTP remote IP or domain
-```$ftpUser = "";``` FTP user account
-```$ftpPass = "";``` FTP password account
-```$ftpRootPath = "/";``` FTP path where deploy directory structure
-```$ftpDailyDir = "daily";``` Store daily Backups
-```$ftpMonthlyDir = "monthly";``` Store Monthly backups
-```$ftpYearlyDir = "yearly";``` Store Yearly backups
+- ```$ftpHost = "";``` FTP remote IP or domain
+- ```$ftpUser = "";``` FTP user account
+- ```$ftpPass = "";``` FTP password account
+- ```$ftpRootPath = "/";``` FTP path where deploy directory structure
+- ```$ftpDailyDir = "daily";``` Store daily Backups
+- ```$ftpMonthlyDir = "monthly";``` Store Monthly backups
+- ```$ftpYearlyDir = "yearly";``` Store Yearly backups
 
-```$cpanelServer = "";``` cPanel Server IP or domain name (cpanel.domain.com)
-```$cpanelUsername = "";``` cPanel User Account
-```$cpanelPassword = "";``` cPanel Password Account
+- ```$cpanelServer = "";``` cPanel Server IP or domain name (cpanel.domain.com)
+- ```$cpanelUsername = "";``` cPanel User Account
+- ```$cpanelPassword = "";``` cPanel Password Account
 
 Configure a cron task in your web hosting to run CP-ABS script every day.
 
