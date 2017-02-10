@@ -45,3 +45,15 @@ Developed in PHP scripting language.
 - The day 1 of January of each year, last done backup will move to Yearly Directory. The reason is the same of the monthly backup. it mean last backup monthly file for each year will move to Year directory.
 - When Backup finish, cPanel will send a email notification with the log of backup and upload FTP. Then you could find the backup in the directories structure.
 
+#Developed By 
+
+* Eduardo Estrella Rosario - <eduardo.estrella.rosario@gmail.com>
+
+<a href="https://www.linkedin.com/in/eduardoestrella">
+  <img alt="Add me to Linkedin" src="https://image.freepik.com/iconos-gratis/boton-del-logotipo-linkedin_318-84979.png" height="60" width="60"/>
+</a>
+
+
+#License
+
+![GPLv3](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/GPLv3_Logo.svg/200px-GPLv3_Logo.svg.png)
