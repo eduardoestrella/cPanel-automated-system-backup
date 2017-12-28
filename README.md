@@ -45,15 +45,29 @@ Developed in PHP scripting language.
 - The day 1 of January of each year, last done backup will move to Yearly Directory. The reason is the same of the monthly backup. it mean last backup monthly file for each year will move to Year directory.
 - When Backup finish, cPanel will send a email notification with the log of backup and upload FTP. Then you could find the backup in the directories structure.
 
-#Developed By 
+# Debug
 
-* Eduardo Estrella Rosario - <eduardo.estrella.rosario@gmail.com>
+Since version 1.1 you can show in the browser the flow of the script. To enable Debug mode set to ```true``` the Define variable ```DEBUG``` in ```config.php``` file and force the execution of index.php manually instead of cron.
 
-<a href="https://www.linkedin.com/in/eduardoestrella">
-  <img alt="Add me to Linkedin" src="https://image.freepik.com/iconos-gratis/boton-del-logotipo-linkedin_318-84979.png" height="60" width="60"/>
-</a>
+# Version
+
+Version 1.1 - Released 12.28.2017
+
+ChangeLog
+
++ Bug fixed - Delete daily backup limit doesn't work (issue #1)
++ Added debug mode
++ Added config file
++ Added logger Util
++ Added isDir Util
++ Define Goblal vars
++ Set passive ftp mode to get correct behavior of some ftp methods
+
+# Developed By
+
+* Eduardo Estrella Rosario - <eduardo.estrella.rosario@gmail.com> - <a href="https://www.linkedin.com/in/eduardoestrella"><img alt="Add me to Linkedin" src="https://image.freepik.com/iconos-gratis/boton-del-logotipo-linkedin_318-84979.png" height="15" width="15"/></a>
 
 
-#License
+# License
 
 ![GPLv3](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/GPLv3_Logo.svg/200px-GPLv3_Logo.svg.png)
