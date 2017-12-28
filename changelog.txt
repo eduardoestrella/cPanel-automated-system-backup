@@ -1,0 +1,20 @@
+----------------------------------------------------
+Version 1.1 - Release 12.28.2017
+----------------------------------------------------
+
++ Bug fixed - Delete daily backup limit doesn't work (issue #1)
++ Added debug mode
++ Added config file
++ Added logger Util
++ Added isDir Util
++ Define Goblal vars
++ Set pasive ftp mode to get correct behavior of some ftp methods
+
+----------------------------------------------------
+Version 1.0
+----------------------------------------------------
++ Added cPanel API v1 For FullBackup
++ Daily backup
++ Monthly backup
++ Yearly backup
+
