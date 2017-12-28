@@ -21,19 +21,21 @@ Developed in PHP scripting language.
 
 # How to use
 
-1. Configure the defaults settings for FTP and cPanel accounts. Editing index.php file:
-  - ```$emailNotify = '';```   Notification email for finish backup
-  - ```$backupDailyLimit = 5;``` Number of store backups in daily directory
-  - ```$ftpHost = "";``` FTP remote IP or domain
-  - ```$ftpUser = "";``` FTP user account
-  - ```$ftpPass = "";``` FTP password account
-  - ```$ftpRootPath = "/";``` FTP path where deploy directory structure
-  - ```$ftpDailyDir = "daily";``` Store daily Backups
-  - ```$ftpMonthlyDir = "monthly";``` Store Monthly backups
-  - ```$ftpYearlyDir = "yearly";``` Store Yearly backups
-  - ```$cpanelServer = "";``` cPanel Server IP or domain name (cpanel.domain.com)
-  - ```$cpanelUsername = "";``` cPanel User Account
-  - ```$cpanelPassword = "";``` cPanel Password Account
+1. Configure the defaults settings for FTP and cPanel accounts. Editing config.php file:
+  - ```EMAIL_NOTIFICATION```   Notification email for finish backup
+  - ```BACKUP_DAILY_LIMIT``` Number of store backups in daily directory
+  - ```FTP_HOST``` FTP remote IP or domain
+  - ```FTP_PORT``` FTP remote Port
+  - ```FTP_USER``` FTP user account
+  - ```FTP_PASS``` FTP password account
+  - ```FTP_ROOT_PATH``` FTP path where deploy directory structure
+  - ```FTP_DAILY_DIRNAME``` Store daily Backups
+  - ```FTP_MONTHLY_DIRNAME``` Store Monthly backups
+  - ```FTP_YEARLY_DIRNAME``` Store Yearly backups
+  - ```CPANEL_HOST``` cPanel Server IP or domain name (cpanel.domain.com)
+  - ```CPANEL_USER``` cPanel User Account
+  - ```CPANEL_PASS``` cPanel Password Account
+  - ```DEBUG``` Enable Debug Mode
 
 2. Upload index.php and lib folder to your web hosting.
 3. Configure a cron task in your web hosting to run index.php script every day.
