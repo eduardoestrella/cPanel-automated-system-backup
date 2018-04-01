@@ -50,6 +50,7 @@ Version 1.2 - Released 01.04.2018 - [ChangeLog](https://github.com/eduardoestrel
 - The day 1 of each month, last done backup will move to Monthly Directory. I do that because FTP protocol don't allow ```copy``` commands from FTP server to same FTP server, I would use local server to ```get``` and ```put``` the file but this would waste too much time transfering a FullBackup. It mean last backup daily file for each month will move to Monthly directory.
 - The day 1 of January of each year, last done backup will move to Yearly Directory. The reason is the same of the monthly backup. it mean last backup monthly file for each year will move to Year directory.
 - When Backup finish, cPanel will send a email notification with the log of backup and upload FTP. Then you could find the backup in the directories structure.
+- A log file is created in Logs folder. Enabled DEBUG in config.php if you want more detail in log file.
 
 # Debug
 
