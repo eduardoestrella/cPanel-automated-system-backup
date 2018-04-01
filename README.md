@@ -6,6 +6,10 @@ cPanel is a control panel base on Linux designed to simplify the process of host
 
 Developed in PHP scripting language.
 
+# Version
+
+Version 1.2 - Released 01.04.2018 - [ChangeLog](https://github.com/eduardoestrella/cPanel-automated-system-backup/blob/master/changelog.txt)
+
 # Dependencies
 
 - [xmlapi](https://github.com/CpanelInc/xmlapi-php) to connect with cPanel's XML-API.
@@ -50,20 +54,6 @@ Developed in PHP scripting language.
 # Debug
 
 Since version 1.1 you can show in the browser the flow of the script. To enable Debug mode set to ```true``` the Define variable ```DEBUG``` in ```config.php``` file and force the execution of index.php manually instead of cron.
-
-# Version
-
-Version 1.1 - Released 12.28.2017
-
-ChangeLog
-
-+ Bug fixed - Delete daily backup limit doesn't work (issue #1)
-+ Added debug mode
-+ Added config file
-+ Added logger Util
-+ Added isDir Util
-+ Define Goblal vars
-+ Set passive ftp mode to get correct behavior of some ftp methods
 
 # Developed By
 
