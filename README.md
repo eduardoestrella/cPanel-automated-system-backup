@@ -8,7 +8,7 @@ Developed in PHP scripting language.
 
 # Version
 
-Version 1.2 - Released 01.04.2018 - [ChangeLog](https://github.com/eduardoestrella/cPanel-automated-system-backup/blob/master/changelog.txt)
+Version 1.2.1 - Released 04.01.2020 - [ChangeLog](https://github.com/eduardoestrella/cPanel-automated-system-backup/blob/master/changelog.txt)
 
 # Dependencies
 
