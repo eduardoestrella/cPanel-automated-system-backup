@@ -131,7 +131,7 @@ $xmlapi->set_port('2083');
 $xmlapi->set_output('json');
 
 $apiArgs = array('passiveftp',FTP_HOST,FTP_USER,FTP_PASS,EMAIL_NOTIFICATION,FTP_PORT,FTP_ROOT_PATH.FTP_DAILY_DIRNAME);
-json = $xmlapi->api1_query(CPANEL_USER,'Fileman','fullbackup',$apiArgs);
+$json = $xmlapi->api1_query(CPANEL_USER,'Fileman','fullbackup',$apiArgs);
 $result = json_decode($json,true);
 
 if(!empty($result['data']['result'])){
