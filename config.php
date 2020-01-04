@@ -7,7 +7,7 @@
 // ----------------------------------------------------------
 // Global
 
-define("VERSION", "1.2");
+define("VERSION", "1.2.1");
 define("EMAIL_NOTIFICATION", "");
 define("BACKUP_DAILY_LIMIT", 5);
 define("DEBUG", false);
